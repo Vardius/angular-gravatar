@@ -1,0 +1,18 @@
+{
+  "name": "angular-vgravatar",
+  "description": "Angular gravatar",
+  "authors": [
+    "Rafał Lorenz <vardius@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "main": [
+    "dist/angular-gravatar.min.js"
+  ],
+  "ignore": [
+    "app",
+    "bower_components",
+    "test",
+    "karma.conf.js"
+  ],
+  "dependencies": {}
+}
