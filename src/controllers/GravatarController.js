@@ -7,11 +7,16 @@
  * file that was distributed with this source code.
  */
 
-import {md5} from "../services/Hash";
+import {md5} from "./../services/Hash";
+
+GravatarController.$inject = ['$scope', 'Gravatar'];
 
 export class GravatarController {
-    static $inject = ['$scope', 'Gravatar'];
 
+    /**
+     * @param $scope
+     * @param Gravatar
+     */
     constructor($scope, Gravatar) {
         this.model = Gravatar;
         this.size = this.size || this.model.size;
@@ -32,3 +37,4 @@ export class GravatarController {
         }
     }
 }
+
