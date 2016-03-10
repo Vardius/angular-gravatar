@@ -2,7 +2,7 @@
   "name": "angular-vgravatar",
   "description": "Angular gravatar component",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/Vardius/angular-gravatar",
   "author": {
     "name": "Rafał Lorenz",
