@@ -16,8 +16,6 @@ export class GravatarController {
      * @param Gravatar
      */
     constructor($scope, Gravatar) {
-        this.$inject = ['$scope', 'Gravatar'];
-
         this.model = Gravatar;
         this.size = this.size || this.model.size;
         this.$scope = $scope;
@@ -38,3 +36,4 @@ export class GravatarController {
     }
 }
 
+GravatarController.$inject = ['$scope', 'Gravatar'];
