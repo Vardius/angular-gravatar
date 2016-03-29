@@ -2,10 +2,10 @@ var loaders = require("./loaders");
 var webpack = require('webpack');
 
 module.exports = {
-    entry: './tests/app.js',
+    entry: './src/app.js',
     output: {
-        filename: 'angular-gravatar.js',
-        path: 'tmp'
+        filename: 'angular-gravatar.min.js',
+        path: 'dist'
     },
     resolve: {
         root: __dirname,
@@ -22,11 +22,10 @@ module.exports = {
         loaders: loaders,
         postLoaders: [
             {
-                test: /^((?!\.spec\.ts).)*.ts$/,
+                test: /^((?!\.spec\.js).)*.js/,
                 exclude: /(node_modules|bower_components)/,
                 loader: 'istanbul-instrumenter'
             }
         ]
     }
 };
-
